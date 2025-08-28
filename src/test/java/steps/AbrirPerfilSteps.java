@@ -7,7 +7,7 @@ import io.cucumber.java.en.*;
 import pages.PerfilGitHub;
 
 
-public class AbrirPerfil {
+public class AbrirPerfilSteps {
     
     PerfilGitHub perfil = new PerfilGitHub();
 
@@ -18,7 +18,7 @@ public class AbrirPerfil {
 
     @Then("visualiza el nombre Hernando José Rojas Castro")
     public void validarNombre(){
-        String nombreEsperado = "Hernando José Rojas Castr";
+        String nombreEsperado = "Hernando José Rojas Castro";
         String nombreElemento = perfil.obtenerNombreDelPerfil();
 
         Assert.assertEquals(nombreElemento, nombreEsperado);
